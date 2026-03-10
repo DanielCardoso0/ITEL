@@ -1,0 +1,65 @@
+:root {
+    --primary: #004a99;
+    --secondary: #00a8e8;
+    --dark: #222;
+    --light: #f9f9f9;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+    margin: 0;
+    color: var(--dark);
+}
+
+header {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.diretor-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.diretor-card:hover {
+    transform: translateY(-5px);
+}
+
+.diretor-card img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.diretor-card h2 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+footer {
+    background: var(--dark);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
